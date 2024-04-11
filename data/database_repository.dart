@@ -1,4 +1,7 @@
-abstract class DatabaseRepository {
+import '../domain/product.dart';
 
-  // TODO: Methoden welche über die Datenbank abgerufen werden
+abstract class DatabaseRepository {
+  void addProduct(Product product);
+  void deleteProduct(Product product);
+  List<Product> getAllProduct();
 }
